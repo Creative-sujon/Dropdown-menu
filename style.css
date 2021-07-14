@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.headermenu {
+    background: #3b3b98;
+}
+.headermenu ul {
+    text-align: center;
+}
+.headermenu ul li {
+    display: inline-block;
+    margin-left: -4px;
+  
+}
+.headermenu ul li a {
+    display: inline-block;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 20px;
+    border-right: .5px solid #ddd;
+}
+
+.headermenu ul li:first-child a{
+    border-left: 1px solid #ddd;
+}
+
+.headermenu ul li:hover > a{
+    background: #182C61;
+}
+
+/* Dropdown menu start */
+
+.headermenu ul li{
+    position: relative;
+}
+.headermenu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:250px;
+    background: #3b3b98;
+    transition: .4s;
+}
+.headermenu ul li ul li{
+    display: block;
+    margin: 0;
+    
+}
+.headermenu ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.headermenu ul li:first-child a{
+    border-left: none;
+}
+
+/* Hover part Start */
+
+.headermenu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transform-origin: top;
+}
+.headermenu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* Hover part End */
